@@ -5,7 +5,7 @@ import sys
 import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
-from db_creds import DB_HOST, DB_NAME, DB_PASSWORD, DB_PORT, DB_USER
+from nmea_data_convert.db_creds import DB_HOST, DB_NAME, DB_PASSWORD, DB_PORT, DB_USER
 
 # Prevent print statements from buffering till end of execution
 print = functools.partial(print, flush=True)

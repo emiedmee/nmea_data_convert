@@ -3,8 +3,8 @@ import sys
 import pandas as pd
 import psycopg2
 
-from column_casting import db_datatypes
-from db_utils import create_table, run_db_command
+from nmea_data_convert.column_casting import db_datatypes
+from nmea_data_convert.db_utils import create_table, run_db_command
 
 # # 'fail', 'replace', or 'append', see https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_sql.html
 # IF_EXISTS_OPT = 'append'

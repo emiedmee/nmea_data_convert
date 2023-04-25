@@ -13,11 +13,11 @@ import numpy as np
 import pandas as pd
 import pynmea2
 
-from column_casting import columns_to_cast, datatype_dict, db_datatypes
-from db_creds import DB_NAME
-from db_data_import import send_data_to_db
-from db_table_lists import NMEA_TABLES
-from db_utils import drop_db_tables
+from nmea_data_convert.column_casting import columns_to_cast, datatype_dict, db_datatypes
+from nmea_data_convert.db_creds import DB_NAME
+from nmea_data_convert.db_data_import import send_data_to_db
+from nmea_data_convert.db_table_lists import NMEA_TABLES
+from nmea_data_convert.db_utils import drop_db_tables
 
 # Prevent print statements from buffering till end of execution
 print = functools.partial(print, flush=True)
