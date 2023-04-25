@@ -9,7 +9,6 @@ from db_utils import create_table, run_db_command
 # # 'fail', 'replace', or 'append', see https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_sql.html
 # IF_EXISTS_OPT = 'append'
 
-
 # uses psycopg2.connection.cursor.execute()
 def send_data_to_db(dfs: list[pd.DataFrame], table_name_base: str, table_name_suffixes=None, dtypes=None):
     table_names = []
